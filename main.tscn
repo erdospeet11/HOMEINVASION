@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://wcbs3oq8vnfb"]
+[gd_scene load_steps=9 format=3 uid="uid://wcbs3oq8vnfb"]
 
 [ext_resource type="PackedScene" uid="uid://3np57omgtt3i" path="res://first-person-controller/player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://bmb10af0sjlkd" path="res://test.blend" id="2_0xm2m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7dm0k"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -53,3 +54,6 @@ shape = SubResource("ConcavePolygonShape3D_0xm2m")
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="House"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2211914, 4.3353586)
 height = 6.442383
+
+[node name="test" parent="." instance=ExtResource("2_0xm2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.733902, -9.536743e-07, -19.662754)

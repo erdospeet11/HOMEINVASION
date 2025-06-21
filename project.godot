@@ -15,6 +15,10 @@ run/main_scene="uid://wcbs3oq8vnfb"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameConfig="*res://global_config.gd"
+
 [display]
 
 window/vsync/vsync_mode=0
