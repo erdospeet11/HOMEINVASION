@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="homeinvasion"
+run/main_scene="uid://wcbs3oq8vnfb"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
