@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://3np57omgtt3i"]
+[gd_scene load_steps=4 format=3 uid="uid://3np57omgtt3i"]
+
+[ext_resource type="Script" uid="uid://cmnasuyphnyx5" path="res://first-person-controller/player.gd" id="1_140n8"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_js3he"]
 
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_140n8"]
+
 [node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_140n8")
 
 [node name="neck" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.78645074, 0)
@@ -11,3 +16,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.78645074, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_js3he")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_140n8")
